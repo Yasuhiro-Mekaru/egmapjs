@@ -20,6 +20,11 @@ window.onload = function() {
 	
 	//Use icon
 	map.addIcon(35.943560,136.188917, '鯖江駅', 'icon/megane.png', 64)
+	
+	//Get LatLng
+	map.on('click', (event)=>{
+	    alert(event.latLng)
+	})
 }
 
 </script>
