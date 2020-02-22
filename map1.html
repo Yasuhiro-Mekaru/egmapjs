@@ -33,6 +33,7 @@ window.onload = function() {
 		console.log(gpos)
 		const pos = [ gpos.coords.latitude, gpos.coords.longitude ]
 		current.setLatLng(pos)
+		console.log(current)
 		map.panTo(pos)
 	}, function() {
 		alert("現在位置に取得に失敗！")
